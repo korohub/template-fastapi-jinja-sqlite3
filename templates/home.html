@@ -1,0 +1,73 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<script>
+
+</script>
+
+
+
+
+<table class="table table-striped border-info">
+  <thead>
+    <tr>
+      <th style="width: 75%">FILE</th>
+      <th>TAILLE</th>
+      <th>SEED</th>
+      <th>LEECH</th>
+      
+    </tr>
+  </thead>
+  <tbody>
+    <!-- {% for stock in stocks %}
+    <tr>
+      <td >{{ stock.symbol }}</td>
+      <td>{{ stock.price }}</td>
+      <td>{{ stock.forward_pe }}</td>
+      <td>{{ stock.forward_eps }}</td>
+      
+    </tr>
+    {% endfor %} -->
+  </tbody>
+</table>
+
+<div class="modal">
+    <i class="close icon">X</i>
+    <div class="modal-header">
+      Add Stocks
+    </div>
+    <div class="modal-body">
+        <div class="">
+            <div class="field">
+              <label>Symbols</label>
+              <textarea id="symbols"></textarea>
+            </div>
+          </div>
+    </div>
+    <div class="actions">
+      <div id="save" class="ui positive right labeled icon button">
+        Add Symbols
+        <i class="plus icon"></i>
+      </div>
+    </div>
+  </div>
+
+  <div class="btn-toolbar" role="toolbar" aria-label="Toolbar with button groups">
+  <div class="btn-group me-2" role="group" aria-label="First group">
+    <button type="button" class="btn btn-secondary">1</button>
+    <button type="button" class="btn btn-secondary">2</button>
+    <button type="button" class="btn btn-secondary">3</button>
+    <button type="button" class="btn btn-secondary">4</button>
+  </div>
+  <div class="btn-group me-2" role="group" aria-label="Second group">
+    <button type="button" class="btn btn-secondary">5</button>
+    <button type="button" class="btn btn-secondary">6</button>
+    <button type="button" class="btn btn-secondary">7</button>
+  </div>
+  <div class="btn-group" role="group" aria-label="Third group">
+    <button type="button" class="btn btn-secondary">8</button>
+  </div>
+</div>
+<br>
+
+{% endblock %}
